@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+      <ion-title>
+          Home
+      </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+      <ion-item>
+          <ion-icon name="mail" item-start></ion-icon>
+          {{ user.email }}
+      </ion-item>
+  </ion-list>
+  <ion-grid>
+      <ion-row>
+          <ion-col>
+              <button ion-button block (tap)="changePassword()">Change Password</button>
+          </ion-col>
+          <ion-col>
+              <button ion-button block color="danger" (tap)="logout()">Logout</button>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>
